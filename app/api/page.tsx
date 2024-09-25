@@ -4,7 +4,7 @@ interface Item {
 }
 
 async function fetchItems(): Promise<Item[]> {
-    const res = await fetch('http://localhost:3000/api/items');
+    const res = await fetch('http://localhost:3000/base/api/items');
     if (!res.ok) {
         //throw new Error('Failed to fetch data');
         console.log('Failed to fetch data');
